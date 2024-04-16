@@ -22,7 +22,7 @@ require 'conexion.php';
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>CRUD con archivos en PHP y MySQL</title>
+	<title>Sistema</title>
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
 	<link href="assets/css/all.min.css" rel="stylesheet">
 	<link href="assets/css/datatables.min.css" rel="stylesheet">
@@ -31,7 +31,7 @@ require 'conexion.php';
 <body>
 
 	<main class="container">
-		<h3 class="text-center pt-3">CRUD</h3>
+		<h3 class="text-center pt-3"></h3>
 
 		<a href="nuevo.php" class="btn btn-primary my-4">Nuevo Registro</a>
 
