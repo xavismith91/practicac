@@ -19,7 +19,7 @@ $id_insert = $conn->insert_id;
 if ($_FILES["archivo"]["error"] === 0) {
 
 	$permitidos = array("image/png", "image/jpg", "image/jpeg", "application/pdf");
-	$limite_kb = 8192; //1 MB
+	$limite_kb = 8192; // 8MB
 
 	if (in_array($_FILES["archivo"]["type"], $permitidos) && $_FILES["archivo"]["size"] <= $limite_kb * 1024) {
 
@@ -69,7 +69,7 @@ if ($_FILES["archivo"]["error"] === 0) {
                   text: "Se ha guardado el registro correctamente",
                   icon: "success"
                 })
-           </script>'
+           </script>
 		<?php } else { ?>
 			echo '<script>Swal.fire({
                   icon: "error",
