@@ -1,17 +1,5 @@
 <?php
 
-/**
- * Página principal que muestra la tabla de registros
- *
- * Esta página muestra una tabla que contiene los registros almacenados en la base de datos.
- * Permite visualizar, editar y eliminar registros.
- *
- * @author MRoblesDev
- * @version 1.0
- * https://github.com/mroblesdev
- *
- */
-
 require 'conexion.php';
 
 ?>

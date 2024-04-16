@@ -1,17 +1,4 @@
 <?php
-
-/**
- * Script para insertar nuevos datos de registro
- *
- * Este script recibe los nuevos datos del registro a través del método POST
- * y realiza la inserción en la base de datos. También permite la carga de archivos adjuntos.
- *
- * @author MRoblesDev
- * @version 1.0
- * https://github.com/mroblesdev
- *
- */
-
 require 'conexion.php';
 
 $nombre = $conn->real_escape_string($_POST['nombre']);
@@ -32,7 +19,7 @@ $id_insert = $conn->insert_id;
 if ($_FILES["archivo"]["error"] === 0) {
 
 	$permitidos = array("image/png", "image/jpg", "image/jpeg", "application/pdf");
-	$limite_kb = 1024; //1 MB
+	$limite_kb = 8192; //1 MB
 
 	if (in_array($_FILES["archivo"]["type"], $permitidos) && $_FILES["archivo"]["size"] <= $limite_kb * 1024) {
 
@@ -78,7 +65,7 @@ if ($_FILES["archivo"]["error"] === 0) {
 <body>
 	<main class="container">
 		<?php if ($resultado) { ?>
-			'<script>Swal.fire({                                                                                                                                                        
+		 <script>Swal.fire({                                                                                                                                                        
                   text: "Se ha guardado el registro correctamente",
                   icon: "success"
                 })
@@ -89,7 +76,7 @@ if ($_FILES["archivo"]["error"] === 0) {
                   title: "Error",
                   text: "Hay un error en el registro"
                 });               
-                  </script>'
+                  </script>
 		<?php } ?>
 
 
