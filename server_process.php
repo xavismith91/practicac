@@ -16,9 +16,9 @@
 
 require 'conexion.php';
 
-$sTabla = "personas";
-$aColumnas = ['id', 'nombre', 'correo', 'telefono'];
-$sIndexColumn = "id";
+$sTabla = "usuario";
+$aColumnas = ['nombre', 'correo', 'usuario', 'contrasena', 'recontrasena', 'token_recuperacion'];
+// $sIndexColumn = "id";
 
 $sLimit = '';
 if (isset($_GET['iDisplayStart']) && $_GET['iDisplayLength'] != '-1') {

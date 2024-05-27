@@ -1,15 +1,5 @@
 <?php
 
-/**
- * Formulario para agregar un nuevo registro
- *
- * Este formulario permite agregar un nuevo registro a la base de datos.
- *
- * @author MRoblesDev
- * @version 1.0
- * https://github.com/mroblesdev
- *
- */
 
 $listaIntereses = ["Libros", "Música", "Deportes", "Otros"];
 
