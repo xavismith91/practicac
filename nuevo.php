@@ -19,7 +19,7 @@ $listaIntereses = ["Libros", "Música", "Deportes", "Otros"];
 	<main class="container">
 		<h3 class="text-center pt-3">Nuevo registro</h3>
 
-		<form class="row g-3" method="POST" action="guarda.php" enctype="multipart/form-data" autocomplete="off">
+		<form action="guarda.php" class="row g-3" method="POST"  enctype="multipart/form-data" autocomplete="off">
 
 			<div class="col-md-6">
 				<label for="nombre" class="form-label">Nombre</label>
