@@ -70,28 +70,17 @@ if ($_FILES["archivo"]["error"] === 0) {
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>CRUD </title>
+	<title>CRUD con archivos en PHP y MySQL</title>
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
 	<main class="container">
 
 		<?php if ($resultado) { ?>
-		  '<script>Swal.fire({
-                  text: "Se ha actualizado el registro correctamente",
-                  icon: "success"
-                })
-           </script>'
-            
+			<h3 class="text-center">REGISTRO MODIFICADO</h3>
 		<?php } else { ?>
-			echo '<script>Swal.fire({
-                  icon: "error",
-                  title: "Error",
-                  text: "Hay un error en su actualización"
-                });               
-                  </script>'
+			<h3 class="text-center">ERROR AL MODIFICAR</h3>
 		<?php } ?>
 
 

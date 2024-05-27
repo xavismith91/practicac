@@ -1,5 +1,17 @@
 <?php
 
+/**
+ * Página principal que muestra la tabla de registros
+ *
+ * Esta página muestra una tabla que contiene los registros almacenados en la base de datos.
+ * Permite visualizar, editar y eliminar registros.
+ *
+ * @author MRoblesDev
+ * @version 1.0
+ * https://github.com/mroblesdev
+ *
+ */
+
 require 'conexion.php';
 
 ?>
@@ -10,7 +22,7 @@ require 'conexion.php';
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Sistema</title>
+	<title>CRUD con archivos en PHP y MySQL</title>
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
 	<link href="assets/css/all.min.css" rel="stylesheet">
 	<link href="assets/css/datatables.min.css" rel="stylesheet">
@@ -19,7 +31,7 @@ require 'conexion.php';
 <body>
 
 	<main class="container">
-		<h3 class="text-center pt-3"></h3>
+		
 
 		<a href="nuevo.php" class="btn btn-primary my-4">Nuevo Registro</a>
 

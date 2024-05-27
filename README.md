@@ -18,3 +18,16 @@ CRUD desarrollado en PHP y MySQL que permite a los usuarios cargar, visualizar y
 - Descargar proyecto
 - Crear base de datos (personal) e importar archivo ```personal.sql```
 - Cambiar los datos de conexión de MySQL en ```conexion.php```
+
+## Autores ✒️
+- **Marco Robles** - *Desarrollo* - [mroblesdev](https://github.com/mroblesdev)
+
+## Licencia 📄
+
+Este proyecto está bajo la Licencia MIT - mira el archivo [LICENSE](LICENSE) para más detalles.
+
+## Expresiones de Gratitud 🎁
+
+* Comenta a otros sobre este proyecto 📢
+* Invita una cerveza 🍺 o un café ☕ [Da clic aquí](https://www.paypal.com/paypalme/markorobles?locale.x=es_XC.) 
+* Da las gracias públicamente 🤓.

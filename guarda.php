@@ -1,4 +1,17 @@
 <?php
+
+/**
+ * Script para insertar nuevos datos de registro
+ *
+ * Este script recibe los nuevos datos del registro a través del método POST
+ * y realiza la inserción en la base de datos. También permite la carga de archivos adjuntos.
+ *
+ * @author MRoblesDev
+ * @version 1.0
+ * https://github.com/mroblesdev
+ *
+ */
+
 require 'conexion.php';
 
 $nombre = $conn->real_escape_string($_POST['nombre']);
@@ -19,7 +32,7 @@ $id_insert = $conn->insert_id;
 if ($_FILES["archivo"]["error"] === 0) {
 
 	$permitidos = array("image/png", "image/jpg", "image/jpeg", "application/pdf");
-	$limite_kb = 8192; // 8MB
+	$limite_kb = 1024; //1 MB
 
 	if (in_array($_FILES["archivo"]["type"], $permitidos) && $_FILES["archivo"]["size"] <= $limite_kb * 1024) {
 
@@ -57,26 +70,17 @@ if ($_FILES["archivo"]["error"] === 0) {
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>CRUD</title>
+	<title>CRUD con archivos en PHP y MySQL</title>
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
 </head>
 
 <body>
 	<main class="container">
+
 		<?php if ($resultado) { ?>
-		 <script>Swal.fire({                                                                                                                                                        
-                  text: "Se ha guardado el registro correctamente",
-                  icon: "success"
-                })
-           </script>
+			<h3 class="text-center">REGISTRO GUARDADO</h3>
 		<?php } else { ?>
-			echo '<script>Swal.fire({
-                  icon: "error",
-                  title: "Error",
-                  text: "Hay un error en el registro"
-                });               
-                  </script>
+			<h3 class="text-center">ERROR AL GUARDAR</h3>
 		<?php } ?>
 
 

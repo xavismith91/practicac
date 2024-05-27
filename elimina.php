@@ -39,25 +39,14 @@ if (is_dir($carpeta)) {
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>CRUD con archivos en PHP y MySQL</title>
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
 	<main class="container">
 		<?php if ($resultado) { ?>
-			'<script>Swal.fire({
-                  title: "",
-                  text: "Su registro se ha eliminado correctamente",
-                  icon: "success"
-                })
-           </script>'
+			<h3 class="text-center">REGISTRO ELIMINADO</h3>
 		<?php } else { ?>
-			echo '<script>Swal.fire({
-                  icon: "error",
-                  title: "Error",
-                  text: "Hay un error en eliminar su registro"
-                });               
-                  </script>'
+			<h3 class="text-center">ERROR AL ELIMINAR</h3>
 		<?php } ?>
 
 		<div class="col-12 text-center">
